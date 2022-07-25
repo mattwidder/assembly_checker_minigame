@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap);
+
+*{ 
+  margin: 0;
+  padding: 0;
+  // box-sizing: border-box;
+  
+  
+}
+
+// utility classes
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-1 {
+  padding: 0 1rem;
+}
+
+.py-2 {
+  padding: 0 1rem;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;  
+}
+
+button {
+  font-size: 2rem;
+  height: 200px;
+  width: 200px;
+  padding: 1rem;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #ececec;
+  box-shadow: 2px 2px 2px #333;
+  transition: all 200ms ease;
+  color: #333;
+
+  &:hover {
+    background: #888;
+  }
+
+  &:active {
+    background: #666;
+  }
+}
+
+a {
+
+  text-decoration: none;
+  color: #333;
+
+  &:visited {
+    color: #333;
+  }
+
+  &:hover {
+    color: #8a3d50;
+    cursor: pointer;
+    
+    
+  }
+
+  &:active {
+    color: #666;
+  }
+}  
+  
+
+// Title Page
+
+#landing__main {
+  background: radial-gradient( circle, transparent 80%, black 150%), #d8d8d8;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .intro__title {
+    font-size: 4rem;
+    color: #333;
+  }
+
+  .start-text {
+    margin-top: 4rem;
+    font-size: 2rem;
+    color: #333;
+    
+  }
+  
+}
+
+// Tutorial Page
+
+
+
+// Main selection page
+
+#main-page {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  height: 95vh;
+  width: 98vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: blue;
+  
+  
+  
+
+
+  .check__container {
+    display: flex;
+    height: 85vh;
+    width: 50vw;
+    margin: 1rem;
+    background: red;
+    
+    
+    
+    
+
+    .buttons__seats--container {
+      display: flex;
+      margin-top: 1rem;
+
+
+
+      .buttons__seats--color-list {
+        display: flex;
+        flex-direction: column;
+        
+        
+      }
+  
+      .buttons__seats--type-list {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+  }
+
+  .compare__container {
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 1rem;
+    height: 85vh;
+    width: 50vw;
+    background: green;
+
+
+    .game__title {
+      font-size: 3rem;
+      color: #333;
+    }
+
+    .image__container--image {
+      height: 40vh;
+    }
+
+    .button__submit {
+      height: 40vh;
+      display: flex;
+      justify-content: end;
+      align-items: flex-end;
+    }
+
+  }
+}
+

@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap);
+* {
+  margin: 0;
+  padding: 0; }
+
+.p-1 {
+  padding: 1rem; }
+
+.p-2 {
+  padding: 2rem; }
+
+.py-1 {
+  padding: 0 1rem; }
+
+.py-2 {
+  padding: 0 1rem; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+button {
+  font-size: 2rem;
+  height: 200px;
+  width: 200px;
+  padding: 1rem;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #ececec;
+  box-shadow: 2px 2px 2px #333;
+  transition: all 200ms ease;
+  color: #333; }
+  button:hover {
+    background: #888; }
+  button:active {
+    background: #666; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+  a:visited {
+    color: #333; }
+  a:hover {
+    color: #8a3d50;
+    cursor: pointer; }
+  a:active {
+    color: #666; }
+
+#landing__main {
+  background: radial-gradient(circle, transparent 80%, black 150%), #d8d8d8;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  #landing__main .intro__title {
+    font-size: 4rem;
+    color: #333; }
+  #landing__main .start-text {
+    margin-top: 4rem;
+    font-size: 2rem;
+    color: #333; }
+
+#main-page {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  height: 95vh;
+  width: 98vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: blue; }
+  #main-page .check__container {
+    display: flex;
+    height: 85vh;
+    width: 50vw;
+    margin: 1rem;
+    background: red; }
+    #main-page .check__container .buttons__seats--container {
+      display: flex;
+      margin-top: 1rem; }
+      #main-page .check__container .buttons__seats--container .buttons__seats--color-list {
+        display: flex;
+        flex-direction: column; }
+      #main-page .check__container .buttons__seats--container .buttons__seats--type-list {
+        display: flex;
+        flex-direction: column; }
+  #main-page .compare__container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 1rem;
+    height: 85vh;
+    width: 50vw;
+    background: green; }
+    #main-page .compare__container .game__title {
+      font-size: 3rem;
+      color: #333; }
+    #main-page .compare__container .image__container--image {
+      height: 40vh; }
+    #main-page .compare__container .button__submit {
+      height: 40vh;
+      display: flex;
+      justify-content: end;
+      align-items: flex-end; }
