@@ -31,6 +31,10 @@ body {
   font-family: 'Roboto', sans-serif;  
 }
 
+.active {
+  background: #AFEEB0;
+}
+
 button {
   font-size: 2rem;
   height: 200px;
@@ -44,6 +48,8 @@ button {
   transition: all 200ms ease;
   color: #333;
 
+  
+
   &:hover {
     background: #888;
   }
@@ -51,6 +57,8 @@ button {
   &:active {
     background: #666;
   }
+
+  
 }
 
 a {
@@ -116,7 +124,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: blue;
   
   
   
@@ -124,10 +131,10 @@ a {
 
   .check__container {
     display: flex;
+    flex-direction: column;
     height: 85vh;
     width: 50vw;
     margin: 1rem;
-    background: red;
     
     
     
@@ -144,12 +151,33 @@ a {
         flex-direction: column;
         
         
+        
       }
   
       .buttons__seats--type-list {
         display: flex;
         flex-direction: column;
+      }     
+    }
+
+    .error__container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 50vh;
+
+      h2#error-message {
+        display: none;
+        font-size: 3rem;
+        color: #9e080b;
       }
+
+      h2#correct-message {
+        display: none;
+        font-size: 3rem;
+        color: #189e08;
+      }
+      
     }
 
   }
@@ -162,7 +190,6 @@ a {
     margin: 1rem;
     height: 85vh;
     width: 50vw;
-    background: green;
 
 
     .game__title {
